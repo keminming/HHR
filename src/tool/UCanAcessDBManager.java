@@ -19,7 +19,7 @@ public class UCanAcessDBManager {
 		Properties p = new Properties();
 		p.put("user", USER);
 		p.put("password", PASS);
-		p.put("ingleconnection", true);
+		p.put("singleconnection", "true");
 		// System.out.println(dbUrl);
 		try {
 			Class.forName(JDBC_DRIVER);

@@ -73,13 +73,6 @@ public class WorkerThread implements Runnable{
 				// TODO Auto-generated catch block
 				e2.printStackTrace();
 			}
-			System.out.println("Waiting for garbage collection...");
-			try {
-				Thread.sleep(120000);
-			} catch (InterruptedException e2) {
-				// TODO Auto-generated catch block
-				e2.printStackTrace();
-			}
 			
 			String target1 = env.target + "_Primers";
 			String target2 = env.target + "_Voice1";

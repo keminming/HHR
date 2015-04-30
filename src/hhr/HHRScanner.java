@@ -16,8 +16,7 @@ public class HHRScanner implements Runnable{
 	private Statistic stat;
 	private KMLGenerator kml;
 	private ExecutorService executor;
-	private static HHRScanner instance = new HHRScanner();
-	
+	private static HHRScanner instance;
 	public String getDependency() {
 		return dependency;
 	}
@@ -63,6 +62,7 @@ public class HHRScanner implements Runnable{
 	}
 
 	public static HHRScanner getInstance(){
+		instance = new HHRScanner();
 		return instance;
 	}
 	
@@ -121,11 +121,6 @@ public class HHRScanner implements Runnable{
 		}
 	}
 	
-	public void stop(){
-		executor.shutdownNow();
-		stat.reset();
-	}
-
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub

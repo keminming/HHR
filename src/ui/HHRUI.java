@@ -255,12 +255,11 @@ public class HHRUI extends JFrame{
 		buttomPanel.add(start);
 		panel.add(buttomPanel);
 		
-		scanner = HHRScanner.getInstance();
-		checker = new ProgressChecker(this,scanner.getStat());
 		config = new HHRConfig();
 		backup = HHRBackup.getInstance();
 		backup.init(config);
-		
+		checker = new ProgressChecker(this);
+
 		this.addWindowListener(new WindowAdapter() {
 			public void windowOpened(WindowEvent e) {
 				config.readConfig();
@@ -297,6 +296,9 @@ public class HHRUI extends JFrame{
 					stopFlag = false;
 					backup.backUp();
 					
+					scanner = HHRScanner.getInstance();
+					checker.setStat(scanner.getStat());
+
 					console.setText("");
 					console.append("Scanning...\n");
 					guiPrintStream = new CustomOutputStream(System.out,console);

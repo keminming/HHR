@@ -11,8 +11,15 @@ public class ProgressChecker implements Runnable{
 	
 	private boolean stop = false;
 	
-	ProgressChecker(HHRUI ui,Statistic stat){
+	ProgressChecker(HHRUI ui){
 		this.ui = ui;
+	}
+
+	public Statistic getStat() {
+		return stat;
+	}
+
+	public void setStat(Statistic stat) {
 		this.stat = stat;
 	}
 

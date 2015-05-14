@@ -295,9 +295,9 @@ public abstract class HHRPlacemark {
 	}
 	
 	public void setLongtitude(){
-		String latitude = root.getElementsByTagName("cal_latitude").item(0).getTextContent();
-		setCal_latitude_name("cal_latitude");
-		setCal_latitude(Double.parseDouble(latitude));
+		String longitude = root.getElementsByTagName("cal_longitude").item(0).getTextContent();
+		setCal_longitude_name("cal_longitude");
+		setCal_longitude(Double.parseDouble(longitude));
 	}
 	
 	public void setMeta(){

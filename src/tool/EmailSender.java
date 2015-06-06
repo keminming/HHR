@@ -21,7 +21,17 @@ public class EmailSender {
     // Get system properties
     private Properties properties = new Properties();
     
-    public EmailSender(){
+	private static EmailSender instance = new EmailSender();
+	
+	public static void setInstance(EmailSender instance) {
+		EmailSender.instance = instance;
+	}
+
+	public static EmailSender getInstance(){
+		return instance;
+	}
+    
+    private EmailSender(){
     	// Setup mail server
     	properties.put("mail.smtp.host", "smtp.gmail.com");
     	properties.put("mail.smtp.socketFactory.port", "465");

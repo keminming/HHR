@@ -71,13 +71,13 @@ public abstract class FormHandler {
 	protected String source;
 	protected String target;
 	protected String language;
-	protected MediaConverter converter;
 	protected EmailSender email;
 	protected String ffmpeg;
 	protected CSVArchive csv;
 	protected CSVArchive history;
 	protected SHA1CheckSum sha1;
 	protected HHRPlacemark placemark;
+	protected MediaConverter converter;
 	
 	protected List<String> audioList = new ArrayList<String>();
 	protected List<List<String>> textList = new ArrayList<List<String>>();
@@ -89,7 +89,6 @@ public abstract class FormHandler {
 
 		this.source = env.source;
 		this.target = env.target;
-		this.ffmpeg = env.ffmpeg;
 		this.language = env.language;
 			
 		try {
@@ -99,9 +98,9 @@ public abstract class FormHandler {
 			e.printStackTrace();
 		}
 
-		sha1 = new SHA1CheckSum();
-		converter = new MediaConverter(ffmpeg);
-		email = new EmailSender();
+		sha1 = SHA1CheckSum.getInstance();
+		converter = MediaConverter.getInstance();
+		email = EmailSender.getInstance();
 		emailInfos = new ArrayList<Email>();
 	}
 	
@@ -133,7 +132,7 @@ public abstract class FormHandler {
 		}
 	}
 	
-	protected abstract void action(Node word) throws IOException;	
+	protected abstract void action(Node word) throws IOException, InterruptedException;	
 	
 	protected void updateKML() {
 		// TODO Auto-generated method stub
@@ -162,20 +161,20 @@ public abstract class FormHandler {
 		}
 	}
 	
-	public void handle() throws SAXException, IOException, AddressException, MessagingException{
+	public void handle() throws SAXException, IOException, AddressException, MessagingException, InterruptedException{
 		// TODO Auto-generated method stub
 		NodeList children = root.getChildNodes();
 		for(int i = WORD_BEGIN; i < WORD_BEGIN + 1742;i++){
-			Statistic.getInstance().incWord();	
+			//Statistic.getInstance().incWord();	
 			action(children.item(i));
 		}
 
 		updateKML();
 		sendEmail();
-		makeCurrentCopy();
+		//makeCurrentCopy();
 	}
 	
-	protected void copyMediaFile(WordInfo info) throws IOException{
+	protected void copyMediaFile(WordInfo info) throws IOException, InterruptedException{
 		String name = info.fields.item(1).getTextContent();
 		if(name.equals(""))
 			return;
@@ -184,10 +183,11 @@ public abstract class FormHandler {
 		String oldHash = csv.getHash(info.keyHead + info.keyHeadIndex);
 		
 		if(!hash.equals(oldHash)){
-			String convertedVideoName = language + pns.prefix1 + info.keyHead +  info.keyHeadIndex + info.timestamp + pns.surfix;
-			converter.convert(ffmpeg, source + name, target + pns.prefix2 + convertedVideoName);
-			videoList.add(convertedVideoName + "(" + name + ")");
-			history.appendToCSV(info.keyHead + "," + info.keyHeadIndex + "," + name + "," + info.timestamp + ",=HYPERLINK(\"" + convertedVideoName + "\")");
+			String convertedVideoName = language + pns.prefix1 + info.keyHead +  info.keyHeadIndex + pns.surfix;
+			String convertedVersionedVideoName = language + pns.prefix1 + info.keyHead +  info.keyHeadIndex + info.timestamp + pns.surfix;
+			converter.convert(source + name, target + pns.prefix2 + convertedVersionedVideoName,target + pns.prefix2 + convertedVideoName);
+			videoList.add(convertedVersionedVideoName + "(" + name + ")");
+			history.appendToCSV(info.keyHead + "," + info.keyHeadIndex + "," + name + "," + info.timestamp + ",=HYPERLINK(\"" + convertedVersionedVideoName + "\")");
 			csv.setHash(info.keyHead + info.keyHeadIndex, hash);
 			csv.setTimestamp(info.keyHead + info.keyHeadIndex, info.timestamp);
 		}			

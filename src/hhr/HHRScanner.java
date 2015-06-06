@@ -6,6 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import tool.KMLGenerator;
+import tool.MediaConverter;
 
 
 public class HHRScanner implements Runnable{
@@ -15,6 +16,7 @@ public class HHRScanner implements Runnable{
 	private String dependency;
 	private Statistic stat;
 	private KMLGenerator kml;
+	private MediaConverter converter;
 	private ExecutorService executor;
 	private static HHRScanner instance;
 	public String getDependency() {
@@ -102,19 +104,18 @@ public class HHRScanner implements Runnable{
 				String language = HHRUtils.getLanguageFromPath(file.getAbsolutePath());
 				String dstLanguageFolder = target + language;
 				
-				WorkerThread worker = new WorkerThread(new HHREnvironment(language,srcLanguageFolder,dstLanguageFolder,ffmpeg));			
+				WorkerThread worker = new WorkerThread(new HHREnvironment(language,srcLanguageFolder,dstLanguageFolder));			
 				
 				executor.execute(worker);
 				languages++;
 			}
 		}
-		stat.setLanguages(languages);
+		stat.setFolderCnt(languages);
 		executor.shutdown();
 		try {
 			executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
 			kml.dump(kmlPath);
-			stat.stop();
-			System.out.println("Scanning Finished.");
+			//System.out.println("Scanning Finished.");
 		} catch (InterruptedException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

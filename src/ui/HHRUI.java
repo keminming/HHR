@@ -1,25 +1,37 @@
 package ui;
 
 import hhr.HHRScanner;
+
+import java.awt.Color;
 import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+
+import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SpinnerModel;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.SpringLayout;
 import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+
+import tool.MediaConverter;
 
 import configure.HHRBackup;
 import configure.HHRConfig;
@@ -95,22 +107,6 @@ public class HHRUI extends JFrame{
 		this.upPanel = upPanel;
 	}
 
-	public JPanel getMiddlePanel() {
-		return middlePanel;
-	}
-
-	public void setMiddlePanel(JPanel middlePanel) {
-		this.middlePanel = middlePanel;
-	}
-
-	public JPanel getButtomPanel() {
-		return buttomPanel;
-	}
-
-	public void setButtomPanel(JPanel buttomPanel) {
-		this.buttomPanel = buttomPanel;
-	}
-
 	public JTextArea getConsole() {
 		return console;
 	}
@@ -184,6 +180,7 @@ public class HHRUI extends JFrame{
 	}
 
 	private HHRScanner scanner;
+	private MediaConverter converter;
 	private HHRConfig config;
 	private HHRBackup backup;
 	private ProgressChecker checker;
@@ -192,10 +189,12 @@ public class HHRUI extends JFrame{
 	private JTextField outputDirChooser;
 	private JTextField dependencyDirChooser;
 	private JTextField ffmpegDirChooser;
-	
+	private SpinnerModel model;
+	private JSpinner spinner;
 	private JPanel upPanel;
-	private JPanel middlePanel;
-	private JPanel buttomPanel;
+	private JPanel left;
+	private JPanel right;
+	private JPanel buttom;
 	
 	private JTextArea console;
 	private JTextArea stat;
@@ -206,54 +205,159 @@ public class HHRUI extends JFrame{
 
 	private Thread workerThread;
 	private Thread statThread;
-	CustomOutputStream guiPrintStream;
+	private CustomOutputStream guiPrintStream;
 	
 	boolean stopFlag = true;
 	
 	public HHRUI() {
 		super("HRR Scanner");
 	
-		Container panel = this.getContentPane();
-		panel.setLayout(new BoxLayout(panel,BoxLayout.PAGE_AXIS));
-		
-		inputDirChooser = new JTextField();
-		outputDirChooser = new JTextField();
-		dependencyDirChooser = new JTextField();
-		ffmpegDirChooser = new JTextField();	
-		start = new JButton("Scan");
-		
-		inputDirChooser.setBorder(new TitledBorder("Input Root Directory"));
-		outputDirChooser.setBorder(new TitledBorder("Output Root Directory"));
-		dependencyDirChooser.setBorder(new TitledBorder("Dependency Directory"));
-		ffmpegDirChooser.setBorder(new TitledBorder("FFMPEG Directory"));
-
-		
+		JPanel panel = new JPanel();
+		//panel.setLayout(new BoxLayout(panel,BoxLayout.Y_AXIS));
+		panel.setLayout(new GridLayout(0,1));
 		upPanel = new JPanel();
-		upPanel.setLayout(new GridLayout(0,2));
+		SpringLayout layout = new SpringLayout();
+		upPanel.setLayout(layout);
+		upPanel.setBorder(new TitledBorder("Settings"));
+		
+		JLabel inputDirLabel = new JLabel("Input Root Directory:");
+		JLabel outputDirLabel = new JLabel("Output Root Directory:");
+		JLabel dependencyDirLabel = new JLabel("Dependency Directory:");
+		JLabel ffmpegLabel = new JLabel("FFMPEG Directory:");
+		JLabel ffmpegProcessLabel = new JLabel("FFMPEG Process:");
+		
+		inputDirChooser = new JTextField("",100);
+		outputDirChooser = new JTextField("",100);
+		dependencyDirChooser = new JTextField("",100);
+		ffmpegDirChooser = new JTextField("",100);
+	    model = new SpinnerNumberModel(5, 1, 20, 1);     
+		spinner = new JSpinner(model);
+		start = new JButton("Scan");
+		start.setPreferredSize(new Dimension(100,30));
+		
+		upPanel.add(inputDirLabel);
 		upPanel.add(inputDirChooser);
+		upPanel.add(outputDirLabel);
 		upPanel.add(outputDirChooser);
+		upPanel.add(dependencyDirLabel);
 		upPanel.add(dependencyDirChooser);
+		upPanel.add(ffmpegLabel);
 		upPanel.add(ffmpegDirChooser);
+		upPanel.add(ffmpegProcessLabel);
+		upPanel.add(spinner);
+		upPanel.add(start);
+		
+		layout.putConstraint(SpringLayout.WEST, inputDirLabel,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, inputDirLabel,
+                5,
+                SpringLayout.NORTH, upPanel);
+		
+		layout.putConstraint(SpringLayout.WEST, inputDirChooser,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, inputDirChooser,
+                5,
+                SpringLayout.SOUTH, inputDirLabel);
+		
+		layout.putConstraint(SpringLayout.WEST, outputDirLabel,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, outputDirLabel,
+                5,
+                SpringLayout.SOUTH, inputDirChooser);
+		
+		layout.putConstraint(SpringLayout.WEST, outputDirChooser,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, outputDirChooser,
+                5,
+                SpringLayout.SOUTH, outputDirLabel);
+		
+		layout.putConstraint(SpringLayout.WEST, dependencyDirLabel,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, dependencyDirLabel,
+                5,
+                SpringLayout.SOUTH, outputDirChooser);
+		
+		layout.putConstraint(SpringLayout.WEST, dependencyDirChooser,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, dependencyDirChooser,
+                5,
+                SpringLayout.SOUTH, dependencyDirLabel);
+		
+		layout.putConstraint(SpringLayout.WEST, ffmpegLabel,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, ffmpegLabel,
+                5,
+                SpringLayout.SOUTH, dependencyDirChooser);
+		
+		layout.putConstraint(SpringLayout.WEST, ffmpegDirChooser,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, ffmpegDirChooser,
+                5,
+                SpringLayout.SOUTH, ffmpegLabel);
+
+		layout.putConstraint(SpringLayout.WEST, ffmpegProcessLabel,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, ffmpegProcessLabel,
+                5,
+                SpringLayout.SOUTH, ffmpegDirChooser);
+
+		layout.putConstraint(SpringLayout.WEST, spinner,
+                5,
+                SpringLayout.WEST, upPanel);
+		
+		layout.putConstraint(SpringLayout.NORTH, spinner,
+                5,
+                SpringLayout.SOUTH, ffmpegProcessLabel);
+		
+		layout.putConstraint(SpringLayout.EAST, start,
+                0,
+                SpringLayout.EAST, ffmpegDirChooser);
+		
+		layout.putConstraint(SpringLayout.NORTH, start,
+                15,
+                SpringLayout.SOUTH, ffmpegDirChooser);
+
 		panel.add(upPanel);
 		
-		console = new JTextArea("Waiting for start...",10,50);
-		stat = new JTextArea("",10,50);
-		stat.setBorder(new TitledBorder("Status"));
+		buttom = new JPanel();
+		buttom.setLayout(new GridLayout(0,2));
+	
+		left = new JPanel();
+		left.setBorder(new TitledBorder("Statistic"));
+		stat = new JTextArea("",12,50);
+		left.add(stat);
 		
+		right = new JPanel();
+		right.setBorder(new TitledBorder("Console"));
+		console = new JTextArea("Waiting for start...",12,50);
 		scroll = new JScrollPane(console);
-		scroll.setBorder(new TitledBorder("Console"));
 		scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-		
-		middlePanel = new JPanel();
-		middlePanel.setLayout(new GridLayout(0,2));
-		middlePanel.add(stat);
-		middlePanel.add(scroll);
-		panel.add(middlePanel);
-		
-		buttomPanel = new JPanel();
-		buttomPanel.setLayout(new GridLayout(0,1));
-		buttomPanel.add(start);
-		panel.add(buttomPanel);
+		right.add(scroll);
+
+		buttom.add(left);
+		buttom.add(right);
+
+		panel.add(buttom);
+
+		this.add(panel);
 		
 		config = new HHRConfig();
 		backup = HHRBackup.getInstance();
@@ -308,7 +412,10 @@ public class HHRUI extends JFrame{
 					scanner.setSource(inputDirChooser.getText());
 				    scanner.setTarget(outputDirChooser.getText());
 				    scanner.setDependency(dependencyDirChooser.getText());
-					scanner.setFfmpeg(ffmpegDirChooser.getText());
+				    
+					converter = MediaConverter.getInstance();
+					converter.setFfmpeg(ffmpegDirChooser.getText());
+					converter.setProcesses((int)spinner.getValue());
 	
 					statThread = new Thread(checker);		
 					workerThread = new Thread(scanner);

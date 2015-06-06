@@ -9,21 +9,28 @@ public class SHA1CheckSum {
 
 	private MessageDigest md;
 	
-	private byte[] dataBytes;
+	private static SHA1CheckSum instance = new SHA1CheckSum();
 	
-	public SHA1CheckSum(){
+	public static void setInstance(SHA1CheckSum instance) {
+		SHA1CheckSum.instance = instance;
+	}
+
+	public static SHA1CheckSum getInstance(){
+		return instance;
+	}
+	
+	private SHA1CheckSum(){
 		 try {
 			md = MessageDigest.getInstance("SHA1");
 		} catch (NoSuchAlgorithmException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		 dataBytes = new byte[1024];
 	}
 	
 	public String hash(String file) throws IOException{
 		@SuppressWarnings("resource")
+		byte[] dataBytes = new byte[1024];
 		FileInputStream fis = new FileInputStream(file);
 		
 		int n = 0;

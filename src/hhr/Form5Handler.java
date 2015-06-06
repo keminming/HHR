@@ -28,7 +28,7 @@ public class Form5Handler extends FormHandler{
 	}
 	
 	@Override
-	public void action(Node word) throws IOException {
+	public void action(Node word) throws IOException, InterruptedException {
 		//copy audio to archive folder, convert format to mp3, record the change to csv file
 		WordInfo info = getWordInfo(word);
 		copyMediaFile(info);	

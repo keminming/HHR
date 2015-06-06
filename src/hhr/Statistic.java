@@ -4,17 +4,17 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Statistic {
 	
-	private boolean start = false;
-	
-	private long startTime;
-	
-	private long endTime;
-	
 	private static final int WORDS = 1742;
 	
-	private AtomicInteger ai = new AtomicInteger(0);
+	private double startTime;
 	
-	private AtomicInteger wai = new AtomicInteger(0);
+	private int folderCnt;
+	
+	private AtomicInteger folderCompleteCnt = new AtomicInteger(0);
+	
+	private AtomicInteger mediaCnt = new AtomicInteger(0);
+	
+	private AtomicInteger mdiaCompleteCnt = new AtomicInteger(0);
 	
 	private static Statistic instance = new Statistic();
 	
@@ -28,10 +28,6 @@ public class Statistic {
 		return instance;
 	}
 
-	public boolean isStart() {
-		return start;
-	}
-
 	public double getStartTime() {
 		return startTime;
 	}
@@ -40,79 +36,49 @@ public class Statistic {
 		this.startTime = startTime;
 	}
 
-	public double getEndTime() {
-		return endTime;
-	}
-
-	public void setEndTime(long endTime) {
-		this.endTime = endTime;
-	}
-
-	public AtomicInteger getAi() {
-		return ai;
-	}
-
-	public void setAi(AtomicInteger ai) {
-		this.ai = ai;
-	}
-
-	public AtomicInteger getWai() {
-		return wai;
-	}
-
-	public void setWai(AtomicInteger wai) {
-		this.wai = wai;
-	}
-
 	public static int getWords() {
 		return WORDS;
 	}
-
-	public void setStart(boolean start) {
-		this.start = start;
-	}
-
-	private int languages;
 	
-	public int getLanguages() {
-		return languages;
+	public int getFolderCnt() {
+		return folderCnt;
 	}
 
-	public void setLanguages(int languages) {
-		this.languages = languages;
+	public void setFolderCnt(int languages) {
+		this.folderCnt = languages;
 	}
 
 	public void reset(){
-		ai.set(0);
-		wai.set(0);
+		folderCompleteCnt.set(0);
+		mediaCnt.set(0);
+		mdiaCompleteCnt.set(0);
 		startTime = System.currentTimeMillis();
-		endTime = 0;
-		start = true;
-	}
-	
-	public void stop(){
-		endTime = System.currentTimeMillis();
-		start = false;
 	}
 	
 	public void incFolder(){
-		ai.incrementAndGet();
+		folderCompleteCnt.incrementAndGet();
 	}
 	
-	public void incWord(){
-		wai.incrementAndGet();
+	public void incMedia()
+	{
+		mediaCnt.incrementAndGet();
 	}
 	
-	public double getCompletePercentage(){
-		return 100 * wai.doubleValue()/WORDS/languages;
+	public void incCompleteMedia()
+	{
+		mdiaCompleteCnt.incrementAndGet();
 	}
 	
-	public int getCompleteCount(){
-		return ai.get();
+	public int getCompleteFolderCnt(){
+		return folderCompleteCnt.get();
 	}
 	
-	public int getCompleteWordCount(){
-		return wai.get();
+	public int getleMediaCnt(){
+		return mediaCnt.get();
+	}
+	
+	public int getCompleteMediaCnt(){
+		return mdiaCompleteCnt.get();
 	}
 	
 	public static void main(String[] args) {

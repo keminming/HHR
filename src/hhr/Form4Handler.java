@@ -64,7 +64,7 @@ public class Form4Handler extends FormHandler{
 	}
 
 	@Override
-	public void action(Node word) throws IOException {
+	public void action(Node word) throws IOException, InterruptedException {
 		WordInfo info = getWordInfo(word);
 		//update database, gestHeadWord word column
 		updateDB(info);

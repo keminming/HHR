@@ -52,27 +52,11 @@
                     <value>jos_jordanian_sign_language</value>
                 </Data>
                 <Data name="__data">
-                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/jo'&gt;jo_jordan&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/jos'&gt;jos_jordanian_sign_language&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;sign &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Yazan Matalqa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Y.matalqa (at) hotmail.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 31.82024 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;null&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 0.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1jo-jordan-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/jo'&gt;jo_jordan&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/jos'&gt;jos_jordanian_sign_language&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;sign &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Yazan Matalqa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Y.matalqa (at) hotmail.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 31.82024 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 36.0829 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1jo-jordan-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
                 </Data>
             </ExtendedData>
             <Point>
-                <coordinates>0.0,31.82024</coordinates>
-            </Point>
-        </Placemark>
-        <Placemark id="uuid:b1e5d97d-e714-4d70-8fde-244ef132328c">
-            <name>af_afghanistan</name>
-            <Snippet maxLines="0"/>
-            <styleUrl>#odk_style1</styleUrl>
-            <ExtendedData>
-                <Data name="__title">
-                    <value>afg_afghan_sign_language</value>
-                </Data>
-                <Data name="__data">
-                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/af'&gt;af_afghanistan&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/afg'&gt;afg_afghan_sign_language&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;sign &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Abdul Ghaffar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Anad_deaf123 (at) yahoo.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 34.5325 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;null&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 0.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1af-afghanistan-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
-                </Data>
-            </ExtendedData>
-            <Point>
-                <coordinates>0.0,34.5325</coordinates>
+                <coordinates>36.0829,31.82024</coordinates>
             </Point>
         </Placemark>
         <Placemark id="uuid:d73680df-9aea-4932-9c29-89390bf25886">
@@ -84,11 +68,27 @@
                     <value>cm1_cameroon_sign_language</value>
                 </Data>
                 <Data name="__data">
-                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/cm'&gt;cm_cameroon&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/cm1'&gt;cm1_cameroon_sign_language&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;sign &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Ebot Ntui Ogork&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Cdeoocrs (at) yahoo.fr &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 6.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;null&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 0.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1cm-cameroon-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/cm'&gt;cm_cameroon&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/cm1'&gt;cm1_cameroon_sign_language&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;sign &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Ebot Ntui Ogork&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Cdeoocrs (at) yahoo.fr &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 6.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 14.1 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1cm-cameroon-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
                 </Data>
             </ExtendedData>
             <Point>
-                <coordinates>0.0,6.0</coordinates>
+                <coordinates>14.1,6.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="uuid:b1e5d97d-e714-4d70-8fde-244ef132328c">
+            <name>af_afghanistan</name>
+            <Snippet maxLines="0"/>
+            <styleUrl>#odk_style1</styleUrl>
+            <ExtendedData>
+                <Data name="__title">
+                    <value>afg_afghan_sign_language</value>
+                </Data>
+                <Data name="__data">
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/af'&gt;af_afghanistan&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/afg'&gt;afg_afghan_sign_language&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;sign &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Abdul Ghaffar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Anad_deaf123 (at) yahoo.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 34.5325 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 69.136606 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1af-afghanistan-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>69.136606,34.5325</coordinates>
             </Point>
         </Placemark>
         <Placemark id="uuid:cf7fd30f-287d-4ed1-8420-445500c9fefa">
@@ -100,11 +100,11 @@
                     <value>arb_arabic__standard</value>
                 </Data>
                 <Data name="__data">
-                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/sa'&gt;sa_saudi_arabia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/arb'&gt;arb_arabic__standard&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Nazeeh Ammari &amp; Ayat Hatem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Zetahemingway (at) hotmail.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 24.60000038 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;null&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 0.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1sa-saudi-arabia-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/sa'&gt;sa_saudi_arabia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/arb'&gt;arb_arabic__standard&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Nazeeh Ammari &amp; Ayat Hatem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Zetahemingway (at) hotmail.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 24.60000038 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 45.09999847 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1sa-saudi-arabia-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
                 </Data>
             </ExtendedData>
             <Point>
-                <coordinates>0.0,24.60000038</coordinates>
+                <coordinates>45.09999847,24.60000038</coordinates>
             </Point>
         </Placemark>
         <Placemark id="uuid:c1a228c4-9a7b-44a0-92ce-000020be9ddc">
@@ -116,11 +116,11 @@
                     <value>spa_spanish</value>
                 </Data>
                 <Data name="__data">
-                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/sp'&gt;sp_spain&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/spa'&gt;spa_spanish&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Guillermo Nunfio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Gnunfio (at) yahoo.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 19.41072964 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;null&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 0.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1sp-spain-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/sp'&gt;sp_spain&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/spa'&gt;spa_spanish&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Guillermo Nunfio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Gnunfio (at) yahoo.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 19.41072964 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; -99.12627295 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1sp-spain-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
                 </Data>
             </ExtendedData>
             <Point>
-                <coordinates>0.0,19.41072964</coordinates>
+                <coordinates>-99.12627295,19.41072964</coordinates>
             </Point>
         </Placemark>
         <Placemark id="uuid:6ab0fa13-cc8c-4445-acd5-42c26ec64d43">
@@ -132,11 +132,11 @@
                     <value>ajp_arabic__south_levantine_spoken</value>
                 </Data>
                 <Data name="__data">
-                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/jo'&gt;jo_jordan&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/ajp'&gt;ajp_arabic__south_levantine_spoken&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Samar (Saber) Ghadban&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Samartranslation (at) yahoo.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 31.710335 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;null&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 0.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1jo-jordan-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/jo'&gt;jo_jordan&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/ajp'&gt;ajp_arabic__south_levantine_spoken&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Samar (Saber) Ghadban&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt; Samartranslation (at) yahoo.com &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 31.710335 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 35.200601 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2015-03-31 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1jo-jordan-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
                 </Data>
             </ExtendedData>
             <Point>
-                <coordinates>0.0,31.710335</coordinates>
+                <coordinates>35.200601,31.710335</coordinates>
             </Point>
         </Placemark>
         <Placemark id="uuid:f9c2a31d-4a7c-4adb-ac0e-c58809c27d18">
@@ -148,11 +148,27 @@
                     <value>amh_amharic</value>
                 </Data>
                 <Data name="__data">
-                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/et'&gt;et_ethiopia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/amh'&gt;amh_amharic&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt;  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 9.027538261 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;null&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 0.0 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2014-10-12 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1et-ethiopia-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/et'&gt;et_ethiopia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/amh'&gt;amh_amharic&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;spoken &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;translater_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt;  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 9.027538261 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 38.74633364 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2014-10-12 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1et-ethiopia-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
                 </Data>
             </ExtendedData>
             <Point>
-                <coordinates>0.0,9.027538261</coordinates>
+                <coordinates>38.74633364,9.027538261</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="uuid:d356f5d2-d3c2-449f-964a-effb79b33b63">
+            <name>ch_china</name>
+            <Snippet maxLines="0"/>
+            <styleUrl>#odk_style1</styleUrl>
+            <ExtendedData>
+                <Data name="__title">
+                    <value>cmn_chinese__mandarin</value>
+                </Data>
+                <Data name="__data">
+                    <value>&lt;table border='1' style='border-collapse: collapse;' &gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; thankyou &lt;/b&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/country/ch'&gt;ch_china&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;sign_language&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href = 'http://www.ethnologue.com/language/cmn'&gt;cmn_chinese__mandarin&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;spoken/sign?&lt;/b&gt;&lt;/td&gt;&lt;td&gt;sign &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;li he.  ren luo.  ling he&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;checker_email&lt;/b&gt;&lt;/td&gt;&lt;td&gt;  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 25.93563569 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;cal_longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 106.2794261 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;start&lt;/b&gt;&lt;/td&gt;&lt;td&gt; 2014-06-19 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;view online&lt;/b&gt;&lt;/td&gt;&lt;td&gt; http://www.hishandsreader.org/1ch-china-languages.html &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>106.2794261,25.93563569</coordinates>
             </Point>
         </Placemark>
     </Document>

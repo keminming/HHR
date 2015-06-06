@@ -36,16 +36,14 @@ public class WorkerThread implements Runnable{
 		File sfolder = new File(env.source);
 	
 		String folderName = sfolder.getName();
-		System.out.println("Starting on folder [" + folderName + "]");
+		System.out.println(">Starting on folder [" + folderName + "]");
 		File[] files = sfolder.listFiles();
 		FormHandler handler = null;
 		
 		try {
 			for(File file : files){
 				String fileName = file.getName();
-				
-				Pattern p = Pattern.compile("([\\d]) HHR.+\\.xml");
-				
+				Pattern p = Pattern.compile("([\\d]) HHR.+\\.xml");			
 				Matcher m = p.matcher(fileName);
 				
 				if(m.find()){
@@ -61,12 +59,12 @@ public class WorkerThread implements Runnable{
 			}
 			
 			Statistic.getInstance().incFolder();
-			System.out.println("Finished on folder [" + folderName + "]");
+			System.out.println(">Finished on folder [" + folderName + "]");
 			
-		} catch(RuntimeException | SAXException | IOException | MessagingException | ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e)
+		} catch(RuntimeException | SAXException | IOException | MessagingException | ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException | InterruptedException e)
 		{
 			e.printStackTrace();
-			System.out.println("Abort on folder [" + folderName + "]");
+			System.out.println(">Abort on folder [" + folderName + "]");
 			try {
 				handler.cleanUp();
 			} catch (IOException e2) {
